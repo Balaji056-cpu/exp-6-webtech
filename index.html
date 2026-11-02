@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Balaji | Portfolio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="scrollBar"></div>
+
+<header id="navbar" class="navbar">
+  <a href="#home" class="logo">Balaji<span>.</span></a>
+  <nav id="navLinks" class="nav-links">
+    <a href="#home">Home</a><a href="#about">About</a><a href="#education">Education</a>
+    <a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#lab">JS Lab</a><a href="#contact">Contact</a>
+  </nav>
+  <div class="clock" id="liveClock">--:--:--</div>
+  <button id="menuBtn" class="menu-btn" aria-label="Toggle menu">&#9776;</button>
+</header>
+
+<!-- HOME -->
+<section id="home" class="hero">
+  <div class="hero-text">
+    <p class="hello">Hello, I am</p>
+    <h1>Balaji</h1>
+    <h2><span id="typed"></span><span class="cursor">|</span></h2>
+    <p class="intro">A Karunya University student (2024–2028) who enjoys technology, software development and building tools that solve everyday problems.</p>
+    <p class="date-line" id="dateLine"></p>
+    <div class="btn-row">
+      <a href="#projects" class="btn primary">View my project</a>
+      <a href="#contact" class="btn ghost">Contact me</a>
+      <button id="themeBtn" class="btn ghost">Change colour</button>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="orbit"><span>HTML</span><span>CSS</span><span>JS</span><span>Python</span></div>
+    <div class="core">&lt;/&gt;</div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="stats reveal">
+  <div class="glass stat"><b class="counter" data-target="4">0</b><small>Technologies</small></div>
+  <div class="glass stat"><b class="counter" data-target="1">0</b><small>Featured project</small></div>
+  <div class="glass stat"><b class="counter" data-target="2028">0</b><small>Graduating year</small></div>
+  <div class="glass stat"><b class="counter" data-target="100">0</b><small>% curiosity</small></div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section reveal">
+  <h2 class="title">About Me</h2>
+  <div class="about-grid">
+    <div class="glass">
+      <p>I am Balaji, a college student at Karunya University with a strong interest in technology and software development. I like turning ideas into working websites and learning how the web works behind the screen.</p>
+      <p>My project, E-DOUSE, started from a simple idea: make laundry easier and cheaper for people living in PGs. I enjoy building things that are useful, clean and easy to use.</p>
+    </div>
+    <div class="glass info-list">
+      <div><span>🎓</span><p><b>Studying at</b><br>Karunya University</p></div>
+      <div><span>💡</span><p><b>Interested in</b><br>Technology and software development</p></div>
+      <div><span>🛠️</span><p><b>Building with</b><br>HTML, CSS, JavaScript, Python</p></div>
+      <div><span>🎯</span><p><b>Focus</b><br>Practical projects that help people</p></div>
+    </div>
+  </div>
+  <div class="card-row">
+    <div class="glass mini"><span>🚀</span><h3>What drives me</h3><p>I like seeing an idea turn into something people can actually open, click and use. Solving a real everyday problem is the best motivation for me.</p></div>
+    <div class="glass mini"><span>📚</span><h3>Currently learning</h3><p>Front-end development with HTML, CSS and JavaScript, and problem solving with Python, while studying at Karunya University.</p></div>
+    <div class="glass mini"><span>🧭</span><h3>My goals</h3><p>To grow into a confident software developer, build more useful projects and keep improving my code, design and communication.</p></div>
+    <div class="glass mini"><span>🤝</span><h3>How I work</h3><p>I keep things simple, write readable code, test every feature and learn by building.</p></div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education" class="section reveal">
+  <h2 class="title">Education</h2>
+  <div class="timeline">
+    <div class="glass tl-item"><h3>SSMHSS</h3><p>School education</p></div>
+    <div class="glass tl-item"><h3>Karunya University</h3><p>2024 – 2028</p><small>Currently studying</small></div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section reveal">
+  <h2 class="title">Skills</h2>
+  <div class="skill-grid">
+    <div class="glass skill"><div class="skill-icon">🌐</div><h3>HTML</h3><p>Page structure and semantic markup.</p><div class="bar"><i data-level="85"></i></div></div>
+    <div class="glass skill"><div class="skill-icon">🎨</div><h3>CSS</h3><p>Layouts, responsive design, animations.</p><div class="bar"><i data-level="80"></i></div></div>
+    <div class="glass skill"><div class="skill-icon">⚡</div><h3>JavaScript</h3><p>Interactivity, DOM, timers and events.</p><div class="bar"><i data-level="70"></i></div></div>
+    <div class="glass skill"><div class="skill-icon">🐍</div><h3>Python</h3><p>Programming fundamentals and logic.</p><div class="bar"><i data-level="65"></i></div></div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section reveal">
+  <h2 class="title">Projects</h2>
+  <div class="glass project">
+    <div class="project-info">
+      <span class="badge">Featured project</span>
+      <h3>E-DOUSE – Online Laundry Service</h3>
+      <p>E-DOUSE is an online laundry service platform designed especially for PG residents. It offers affordable laundry services at a lower cost and lets users place laundry orders and track the progress of their laundry.</p>
+      <ul class="features">
+        <li>🏠 Made for PG residents</li>
+        <li>💸 Affordable, low-cost service</li>
+        <li>🧺 Easy online laundry orders</li>
+        <li>📍 Order progress tracking</li>
+      </ul>
+      <p class="why"><b>Why I built it:</b> laundry is a daily need for PG residents, and a simple online service saves them time and money.</p>
+    </div>
+    <div class="tracker">
+      <h4>Live order tracker (demo)</h4>
+      <div class="track-line"><div id="trackFill"></div><div id="truck">🚚</div></div>
+      <div class="steps" id="trackSteps"><span>Ordered</span><span>Picked up</span><span>Washing</span><span>Delivered</span></div>
+      <p id="trackStatus" class="status">Ready to start</p>
+      <div class="btn-row">
+        <button id="startTrack" class="btn primary">Start</button>
+        <button id="stopTrack" class="btn ghost">Stop</button>
+        <button id="resetTrack" class="btn ghost">Reset</button>
+      </div>
+    </div>
+  </div>
+  <div class="card-row projects-more">
+    <div class="glass mini">
+      <span class="badge">College practical</span>
+      <h3>JavaScript Styles &amp; Animations Lab</h3>
+      <p>A hands-on practical covering timers, dynamic styles, show/hide, mouse events, moving boxes and fade effects. You can try every demo in the JavaScript Lab section below.</p>
+      <p class="tags"><b>HTML</b><b>CSS</b><b>JavaScript</b></p>
+      <a href="#lab" class="btn small">Try the demos</a>
+    </div>
+    <div class="glass mini">
+      <span class="badge">Personal website</span>
+      <h3>Animated Portfolio Website</h3>
+      <p>This responsive portfolio you are viewing: live clock, typing intro, scroll reveals, animated skill bars, a delivery tracker and a validated contact form.</p>
+      <p class="tags"><b>HTML</b><b>CSS</b><b>JavaScript</b></p>
+      <a href="#home" class="btn small">Back to top</a>
+    </div>
+  </div>
+</section>
+
+<!-- JS LAB -->
+<section id="lab" class="section reveal">
+  <h2 class="title">JavaScript Lab</h2>
+  <div class="lab-grid">
+    <div class="glass lab">
+      <h3>Timers</h3>
+      <p id="timerOut">Counter: 0</p>
+      <div class="btn-row">
+        <button class="btn small" id="startInt">setInterval</button>
+        <button class="btn small" id="stopInt">clearInterval</button>
+        <button class="btn small" id="startTO">setTimeout</button>
+        <button class="btn small" id="stopTO">clearTimeout</button>
+      </div>
+      <p id="toMsg" class="status"></p>
+    </div>
+    <div class="glass lab">
+      <h3>Styles</h3>
+      <div class="btn-row">
+        <button class="btn small" id="bgBtn">Change background</button>
+        <button class="btn small" id="sizeBtn">Change font size</button>
+        <button class="btn small" id="toggleBtn">Show / hide</button>
+      </div>
+      <p id="sizeText" class="size-text">Hover me: I grow on mouseover.</p>
+      <p id="hideBox" class="hide-box">Now you see me!</p>
+    </div>
+    <div class="glass lab">
+      <h3>Animation</h3>
+      <div class="arena"><div id="moveBox"></div></div>
+      <div class="btn-row">
+        <button class="btn small" id="moveBtn">Move box</button>
+        <button class="btn small" id="fadeBtn">Fade in / out</button>
+      </div>
+      <div id="fadeBox" class="fade-box">Fading panel</div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section reveal">
+  <h2 class="title">Contact</h2>
+  <div class="contact-grid">
+    <div class="glass">
+      <h3>Let's connect</h3>
+      <p>Have a question or an idea? Send me a message.</p>
+      <p class="mail">✉️ <a href="mailto:balajie24@karunya.edu.in">balajie24@karunya.edu.in</a></p>
+    </div>
+    <form id="contactForm" class="glass" novalidate>
+      <label>Name<input type="text" id="name" placeholder="Max 8 letters"><small class="err" id="nameErr"></small></label>
+      <label>Email<input type="email" id="email" placeholder="you@example.com"><small class="err" id="emailErr"></small></label>
+      <label>Phone<input type="text" id="phone" placeholder="10 digits, starts with 6-9"><small class="err" id="phoneErr"></small></label>
+      <label>Message<textarea id="message" rows="4" placeholder="Your message"></textarea><small class="err" id="messageErr"></small></label>
+      <button type="submit" class="btn primary">Send message</button>
+      <p id="formSuccess" class="success"></p>
+    </form>
+  </div>
+</section>
+
+<footer>© <span id="year"></span> Balaji · Karunya University</footer>
+<script src="script.js"></script>
+</body>
+</html>
